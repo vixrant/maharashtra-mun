@@ -1,4 +1,6 @@
-DJSCE Maharastra MUN Website
+<p>
+    <h1 align="center">🏛 DJSCE Maharastra MUN Website</h1>
+</p>
 
 Theme Name: TheEvent
 Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
