@@ -34,3 +34,18 @@ button.buy-tickets.menu-active a:before {
   text-align: center;
   font-weight: bolder;
 }
+
+/*--------------------------------------------------------------
+# Registration Section
+--------------------------------------------------------------*/
+
+#registration {
+  background: var(--theme-secondary);
+  color: white;
+}
+
+#registration .form-control {
+  background: transparent;
+  color: white;
+  border: solid 1px white;
+}
