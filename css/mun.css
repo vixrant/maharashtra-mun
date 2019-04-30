@@ -20,3 +20,17 @@ button.buy-tickets:hover a:before,
 button.buy-tickets.menu-active a:before {
   visibility: hidden;
 }
+
+/*--------------------------------------------------------------
+# Committees Section
+--------------------------------------------------------------*/
+
+#committees img {
+  width: 100%;
+  height: auto;
+}
+
+#committees .card-title {
+  text-align: center;
+  font-weight: bolder;
+}
