@@ -247,6 +247,9 @@ Footer
             Designed by bootstrapmade
           </a>
         </div>
+        <div class="credits">
+          <a href="https://www.vikrant.ga">⊽</a>
+        </div>
       </div>
     </footer>
     <!-- #footer -->
@@ -260,13 +263,15 @@ Footer
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/venobox/venobox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139389801-1"></script>
     <script>
-      document.write(
-        '<script src="http://' +
-          (location.host || "${1:localhost}").split(":")[0] +
-          ':${2:35729}/livereload.js?snipver=1"></' +
-          "script>"
-      );
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139389801-1');
     </script>
 
     <!-- Template Main Javascript File -->
