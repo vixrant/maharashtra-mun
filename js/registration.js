@@ -16,17 +16,18 @@ regForm.onsubmit = function(e) {
     let data = {};
     new FormData(regForm).forEach((value, key) => {data[key] = value;});
 
-    // if(data.preference1 === data.preference2) {
-    //     alert("Preference 1 and 2 cannot be the same!");
-    //     return;
-    // }
+    if(data.preference1 === data.preference2) {
+        alert("Preference 1 and 2 cannot be the same!");
+        return;
+    }
 
     firebase.firestore()
         .collection('registrations')
         .doc(Date.now().toString())
         .set(data)
         .then(() => {
-            alert("Registered!");
+            alert("Thank you for registering!");
+            location.href = "../"; // redirect
         })
         .catch((e) => {
             console.warn("An error occured, contact Vikrant.");
