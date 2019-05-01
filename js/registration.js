@@ -30,6 +30,7 @@ regForm.onsubmit = function(e) {
             location.href = "../"; // redirect
         })
         .catch((e) => {
+            alert("There was a problem in registration. Please tell this to -> gajriavikrant@gmail.com.");
             console.warn("An error occured, contact Vikrant.");
             console.error(e);
         });
