@@ -1,0 +1,16 @@
+{
+    "short_name": "mahsummit",
+    "name": "Maharashtra Summit 2019",
+    "icons": [
+      {
+        "src": "/img/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#1e272e"
+  }
