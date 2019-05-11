@@ -30,22 +30,24 @@ regForm.onsubmit = function(e) {
     submitButton.type = "";
     lock = true;
 
-    firebase.firestore()
-        .collection('registrations')
-        .doc(Date.now().toString())
-        .set(data)
-        .then(() => {
-            alert("Thank you for registering!");
-            location.href = "../"; // redirect
-        })
-        .catch((e) => {
-            alert("There was a problem in registration. Please tell this to -> gajriavikrant@gmail.com.");
-            console.warn("An error occured, contact Vikrant.");
-            console.error(e);
-        })
-        .finally(() => {
-            submitButton.classList.remove('disabled');
-            submitButton.type = "submit";
-            lock = false;
-        });
+    alert("Registrations have closed!");
+
+    // firebase.firestore()
+    //     .collection('registrations')
+    //     .doc(Date.now().toString())
+    //     .set(data)
+    //     .then(() => {
+    //         alert("Thank you for registering!");
+    //         location.href = "../"; // redirect
+    //     })
+    //     .catch((e) => {
+    //         alert("There was a problem in registration. Please tell this to -> gajriavikrant@gmail.com.");
+    //         console.warn("An error occured, contact Vikrant.");
+    //         console.error(e);
+    //     })
+    //     .finally(() => {
+    //         submitButton.classList.remove('disabled');
+    //         submitButton.type = "submit";
+    //         lock = false;
+    //     });
 };
