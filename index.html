@@ -88,6 +88,40 @@
            </div>
        </div> -->
 
+         <script>
+$('.parent-dropdown').hover(function(evt) {
+  evt.preventDefault();
+  var openClass = 'w--open';
+  if (evt.type == 'mouseenter') { 
+    $(this).find('.w-dropdown-toggle').addClass(openClass); 
+    $(this).find('.dd-list').addClass(openClass);
+       
+  }
+  else if (evt.type == 'mouseleave') { 
+    $(this).find('.w-dropdown-toggle').removeClass(openClass); 
+    $(this).find('.dd-list').removeClass(openClass);
+      
+  }
+ }); 
+</script>
+
+<script>
+$('.nested-dropdown').hover(function(evt) {
+  evt.preventDefault();
+  var openClass = 'w--open';
+  if (evt.type == 'mouseenter') { 
+    
+        $(this).find('.drop-second').addClass(openClass);
+        $(this).find('.in-drop').addClass(openClass);
+  }
+  else if (evt.type == 'mouseleave') { 
+    
+      $(this).find('.drop-second').removeClass(openClass);
+      $(this).find('.in-drop').removeClass(openClass);
+  }
+ }); 
+</script>
+
        <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="collapse" href="#">Committees
         <span class="caret"></span></a>
