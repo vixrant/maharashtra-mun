@@ -1685,7 +1685,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
 display: block;    
 }
-@media (max-width: 979px) {
+@media (max-width: 100%) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
